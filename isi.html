@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Form Add Product</title>
+</head>
+<body>
+  <form method="POST" action="proses.php">
+    <fieldset>
+      <legend>Add Product</legend>
+      <p>
+        <label for="">Product Name</label>
+        <input type="text"
+        name="nama_produk"
+        placeholder="isi dengan huruf kapital"/>
+      </p>
+
+      <p>
+        <label for="">Harga</label>
+        <input type="number"
+        name="harga_produk"
+        value="100"/>
+      </p>
+
+      <p>
+        <label for="">Deskripsi</label>
+        <textarea name="deskripsi_produk" rows="5" placeholder="isi deskripsi produk"></textarea>
+      </p>
+
+      <p>
+        <label for="">Foto Produk</label>
+        <input type="file" name="gambar_produk" accept="image/*" />
+      </p>
+
+      <p>
+        <input type="submit" name="submit" value="Add">
+      </p>
+    </fieldset>
+  </form>
+</body>
+</html>
